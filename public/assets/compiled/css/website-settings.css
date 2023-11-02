@@ -1,0 +1,35 @@
+.card {
+    min-height: 230px;
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: unset;
+}
+
+.icon-size {
+    font-size: 4rem;
+}
+
+.rotate {
+    --style: infinite;
+    animation: rotate 1s var(--style);
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate.rotate_paused {
+    --style: 1;
+}
+
+.ssl-view.fa-unlock-alt {
+    color: var(--bs-danger)
+}
+
+.ssl-view.fa-lock {
+    color: var(--bs-success)
+}
